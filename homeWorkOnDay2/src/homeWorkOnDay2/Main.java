@@ -3,17 +3,17 @@ package homeWorkOnDay2;
 public class Main {
 
 	public static void main(String[] args) {
-		Product product1=new Product();
-		product1.id=1;
-		product1.name="Yazýlým Geliþtirici Yetiþtirme Kampý C#-Angular";
+		Course course1=new Course();
+		course1.id=1;
+		course1.name="Yazýlým Geliþtirici Yetiþtirme Kampý C#-Angular";
 		
-		Product product2=new Product();
-		product2.id=2;
-		product2.name="Yazýlým Geliþtirici Yetiþtirme Kampý Java-React";
+		Course course2=new Course();
+		course2.id=2;
+		course2.name="Yazýlým Geliþtirici Yetiþtirme Kampý Java-React";
 		
-		Product product3=new Product();
-		product3.id=3;
-		product3.name="Programlamaya Giriþ Ýçin Temel Kurs";
+		Course course3=new Course();
+		course3.id=3;
+		course3.name="Programlamaya Giriþ Ýçin Temel Kurs";
 		
 		System.out.println("----------------------------");
 		
@@ -23,16 +23,17 @@ public class Main {
 		
 		System.out.println("---------------------------");
 		
-		ProductManager productManager=new ProductManager() ;
-		productManager.addToEducation(product1);
-		productManager.addToEducation(product2);
-		productManager.addToEducation(product3);
+		CourseManager courseManager=new CourseManager() ;
+		courseManager.addToEducation(course1);
+		courseManager.addToEducation(course2);
+		courseManager.addToEducation(course3);
 		
 		System.out.println("---------------------------");
 		
-		Product[] products= {product1,product2,product3};
-		for (Product product : products) {
-			System.out.println(product.id+product.name);
+		Course[] courses= {course1,course2,course3};
+		for (Course course : courses) {
+			
+			System.out.println(course.id+" "+course.name);
 		}
 		
 		
